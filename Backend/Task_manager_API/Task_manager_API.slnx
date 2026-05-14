@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Task_manager.Core/Task_manager.Core.csproj" />
+  <Project Path="Task_manager.Tests/Task_manager.Tests.csproj" />
+  <Project Path="Task_manager_API/Task_manager_API.csproj" />
+</Solution>

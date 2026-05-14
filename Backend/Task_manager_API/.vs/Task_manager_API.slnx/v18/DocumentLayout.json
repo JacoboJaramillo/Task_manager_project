@@ -1,0 +1,268 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager_api\\task_manager_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|solutionrelative:task_manager_api\\task_manager_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD51DF2-8C14-8E24-4161-8988C2C64C2F}|Task_manager.Core\\Task_manager.Core.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager.core\\entities\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD51DF2-8C14-8E24-4161-8988C2C64C2F}|Task_manager.Core\\Task_manager.Core.csproj|solutionrelative:task_manager.core\\entities\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager_api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|solutionrelative:task_manager_api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager_api\\task_manager_api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|solutionrelative:task_manager_api\\task_manager_api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager_api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|solutionrelative:task_manager_api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|solutionrelative:task_manager_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|solutionrelative:task_manager_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager_api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|solutionrelative:task_manager_api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74883066-0CC6-E3FA-AF8C-18555F4613CA}|Task_manager.Tests\\Task_manager.Tests.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager.tests\\task_manager.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{74883066-0CC6-E3FA-AF8C-18555F4613CA}|Task_manager.Tests\\Task_manager.Tests.csproj|solutionrelative:task_manager.tests\\task_manager.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD51DF2-8C14-8E24-4161-8988C2C64C2F}|Task_manager.Core\\Task_manager.Core.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager.core\\task_manager.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3DD51DF2-8C14-8E24-4161-8988C2C64C2F}|Task_manager.Core\\Task_manager.Core.csproj|solutionrelative:task_manager.core\\task_manager.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74883066-0CC6-E3FA-AF8C-18555F4613CA}|Task_manager.Tests\\Task_manager.Tests.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager.tests\\task_manager.tests.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{74883066-0CC6-E3FA-AF8C-18555F4613CA}|Task_manager.Tests\\Task_manager.Tests.csproj|solutionrelative:task_manager.tests\\task_manager.tests.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD51DF2-8C14-8E24-4161-8988C2C64C2F}|Task_manager.Core\\Task_manager.Core.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager.core\\task_manager.core.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{3DD51DF2-8C14-8E24-4161-8988C2C64C2F}|Task_manager.Core\\Task_manager.Core.csproj|solutionrelative:task_manager.core\\task_manager.core.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD51DF2-8C14-8E24-4161-8988C2C64C2F}|Task_manager.Core\\Task_manager.Core.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD51DF2-8C14-8E24-4161-8988C2C64C2F}|Task_manager.Core\\Task_manager.Core.csproj|solutionrelative:task_manager.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD51DF2-8C14-8E24-4161-8988C2C64C2F}|Task_manager.Core\\Task_manager.Core.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager.core\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD51DF2-8C14-8E24-4161-8988C2C64C2F}|Task_manager.Core\\Task_manager.Core.csproj|solutionrelative:task_manager.core\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74883066-0CC6-E3FA-AF8C-18555F4613CA}|Task_manager.Tests\\Task_manager.Tests.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74883066-0CC6-E3FA-AF8C-18555F4613CA}|Task_manager.Tests\\Task_manager.Tests.csproj|solutionrelative:task_manager.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "Task_manager_API\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "Task_manager_API\\Controllers\\TaskController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T01:10:24.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Task_manager_API.csproj",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Task_manager_API.csproj",
+              "RelativeDocumentMoniker": "Task_manager_API\\Task_manager_API.csproj",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Task_manager_API.csproj",
+              "RelativeToolTip": "Task_manager_API\\Task_manager_API.csproj",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-11T23:36:08.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Task_manager_API",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Task_manager_API.csproj",
+              "RelativeDocumentMoniker": "Task_manager_API\\Task_manager_API.csproj",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Task_manager_API.csproj",
+              "RelativeToolTip": "Task_manager_API\\Task_manager_API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-13T02:28:12.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Task_manager_API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\appsettings.Development.json",
+              "RelativeToolTip": "Task_manager_API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-12T00:11:53.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Program.cs",
+              "RelativeDocumentMoniker": "Task_manager_API\\Program.cs",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Program.cs",
+              "RelativeToolTip": "Task_manager_API\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T01:46:24.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Core\\Entities\\TaskItem.cs",
+              "RelativeDocumentMoniker": "Task_manager.Core\\Entities\\TaskItem.cs",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Core\\Entities\\TaskItem.cs",
+              "RelativeToolTip": "Task_manager.Core\\Entities\\TaskItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T00:39:34.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Data\\appDbContext.cs",
+              "RelativeDocumentMoniker": "Task_manager_API\\Data\\appDbContext.cs",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Data\\appDbContext.cs",
+              "RelativeToolTip": "Task_manager_API\\Data\\appDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T00:44:14.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\appsettings.json",
+              "RelativeDocumentMoniker": "Task_manager_API\\appsettings.json",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\appsettings.json",
+              "RelativeToolTip": "Task_manager_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-12T00:11:51.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Task_manager.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Tests\\Task_manager.Tests.csproj",
+              "RelativeDocumentMoniker": "Task_manager.Tests\\Task_manager.Tests.csproj",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Tests\\Task_manager.Tests.csproj",
+              "RelativeToolTip": "Task_manager.Tests\\Task_manager.Tests.csproj",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-11T23:36:52.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Task_manager.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Core\\Task_manager.Core.csproj",
+              "RelativeDocumentMoniker": "Task_manager.Core\\Task_manager.Core.csproj",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Core\\Task_manager.Core.csproj",
+              "RelativeToolTip": "Task_manager.Core\\Task_manager.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-12T00:28:13.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Task_manager.Tests",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Tests\\Task_manager.Tests.csproj",
+              "RelativeDocumentMoniker": "Task_manager.Tests\\Task_manager.Tests.csproj",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Tests\\Task_manager.Tests.csproj",
+              "RelativeToolTip": "Task_manager.Tests\\Task_manager.Tests.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-13T02:35:55.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Task_manager.Core",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Core\\Task_manager.Core.csproj",
+              "RelativeDocumentMoniker": "Task_manager.Core\\Task_manager.Core.csproj",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Core\\Task_manager.Core.csproj",
+              "RelativeToolTip": "Task_manager.Core\\Task_manager.Core.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-13T02:22:21.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Core\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "Task_manager.Core\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Core\\Entities\\Category.cs",
+              "RelativeToolTip": "Task_manager.Core\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T23:32:23.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Task_manager.Core\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Core\\Entities\\User.cs",
+              "RelativeToolTip": "Task_manager.Core\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T00:29:19.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Task_manager.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "Task_manager.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T23:33:34.929Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
