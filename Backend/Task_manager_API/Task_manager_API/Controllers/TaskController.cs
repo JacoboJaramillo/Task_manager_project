@@ -1,102 +1,173 @@
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using Task_manager.Core.Entities;
+using Task_manager_API.DTOs;
 using TaskManager.API.Data;
-
 namespace Task_manager_API.Controllers
 {
-  [Route("api/[controller]")]
+  [Authorize]
   [ApiController]
+  [Route("api/[controller]")]
   public class TaskController : Controller
   {
     private readonly AppDbContext _context;
-
     public TaskController(AppDbContext context)
     {
       _context = context;
     }
-
     //GET API TASKS
-
     [HttpGet]
-
-    public async Task<ActionResult<IEnumerable<TaskItem>>> GetTasks()
+    public async Task<ActionResult<IEnumerable<TaskDTO>>> GetTasks()
     {
-      return await _context.Tasks.ToListAsync();
-    }
-
-    //GET
-
-    [HttpGet("{id}")]
-
-    public async Task<ActionResult<IEnumerable<TaskItem>>> getTasks(int id)
-    {
-      var tarea = await _context.Tasks.FindAsync(id);
-      if (tarea == null)
+      var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+     if(Guid.TryParse(userId, out Guid result))
       {
-        return NotFound(new { mensaje = "Tarea no encontrada" });
+        var tareas = await _context.Tasks.Where(i => i.UserId == result).ToListAsync();
+         return tareas.Select(t => TaskDTO.TareaSimple(t)).ToList();
       }
-      return Ok(tarea);
+      else
+      {
+        return NotFound(new { mensaje = "Usuario no encontrado" });
+      }
     }
-
-    //POST: API TAREA
-
+    //POST API TAREA
     [HttpPost]
-    public async Task<ActionResult<TaskItem>> postTarea(TaskItem tarea)
+    public async Task<ActionResult<TaskDTO>> PostTasks(CreateTaskDTO Task)
     {
-      _context.Tasks.Add(tarea);
-      await _context.SaveChangesAsync();
-
-      return CreatedAtAction(nameof(getTasks), new { id = tarea.Id }, tarea);
-
-    }
-
-    //UPDATE: API TAREA
-
-    [HttpPut("{id}")]
-    public async Task<ActionResult> putTarea(Guid id, TaskItem tarea)
-    {
-      if (id != tarea.Id)
+      var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      if (Guid.TryParse(userId, out Guid result))
       {
-        return BadRequest(new { mensaje = "Los ID's no coinciden" });
-      }
-
-      _context.Entry(tarea).State = EntityState.Modified;
-
-      try
-      {
+        var tareaUsuario = new TaskItem
+        {
+          UserId = result,
+          Title = Task.Title,
+          Description = Task.Description,
+          IsCompleted = Task.IsCompleted,
+          Priority = Task.Priority,
+          DueDate = Task.DueDate
+        };
+        _context.Tasks.Add(tareaUsuario);
         await _context.SaveChangesAsync();
+        return CreatedAtAction(nameof(GetTasks), new { id = TaskDTO.TareaSimple(tareaUsuario).Id }, TaskDTO.TareaSimple(tareaUsuario));
+
       }
-      catch (DbUpdateConcurrencyException)
+      return BadRequest("Peticion no encontrada");
+    }
+    [HttpPut("{id}")]
+    public async Task<ActionResult<TaskDTO>> putTarea(Guid id, CreateTaskDTO Task)
+    {
+      var buscarId = await _context.Tasks.FindAsync(id);
+      if (buscarId == null) return NotFound();
+      var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      if (Guid.TryParse(userId, out Guid result))
       {
-        if (!tareaExists(id))
+        if (buscarId.UserId != result)
         {
           return NotFound();
         }
-        else
-        {
-          throw;
-        }
+        buscarId.Title = Task.Title;
+        buscarId.Description = Task.Description;
+        buscarId.IsCompleted = Task.IsCompleted;
+        buscarId.Priority = Task.Priority;
+        buscarId.DueDate = Task.DueDate;
+        await _context.SaveChangesAsync();
+        return Ok(TaskDTO.TareaSimple(buscarId));
       }
-      return NoContent();
+      return BadRequest();
     }
-
-    //DELETE: API TAREAS
-
     [HttpDelete("{id}")]
     public async Task<IActionResult> deleteTarea(Guid id)
     {
-      var tarea = await _context.Tasks.FindAsync(id);
-
-      if(tarea == null) {  return NotFound(); }
-      _context.Tasks.Remove(tarea);
-      await _context.SaveChangesAsync();
-      return Ok(new { mensaje = "Eliminado correctamente" });
+      var buscarId = await _context.Tasks.FindAsync(id);
+      if (buscarId == null) return NotFound();
+      var UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      if (Guid.TryParse(UserId, out Guid result))
+      {
+        if(buscarId.UserId != result)
+        {
+          return NotFound();
+        }
+        _context.Tasks.Remove(buscarId);
+        await _context.SaveChangesAsync();
+        return NoContent();
+      }
+      return BadRequest();
     }
+    ////GET
 
-    private bool tareaExists(Guid id)
-    {
-      return _context.Tasks.Any(t => t.Id == id);
-    }
+    //[HttpGet("{id}")]
+
+    //public async Task<ActionResult<IEnumerable<TaskItem>>> getTasks(int id)
+    //{
+    //  var tarea = await _context.Tasks.FindAsync(id);
+    //  if (tarea == null)
+    //  {
+    //    return NotFound(new { mensaje = "Tarea no encontrada" });
+    //  }
+    //  return Ok(tarea);
+    //}
+
+    ////POST: API TAREA
+
+    //[HttpPost]
+    //public async Task<ActionResult<TaskItem>> postTarea(TaskItem tarea)
+    //{
+    //  _context.Tasks.Add(tarea);
+    //  await _context.SaveChangesAsync();
+
+    //  return CreatedAtAction(nameof(getTasks), new { id = tarea.Id }, tarea);
+
+    //}
+
+    ////UPDATE: API TAREA
+
+    //[HttpPut("{id}")]
+    //public async Task<ActionResult> putTarea(Guid id, TaskItem tarea)
+    //{
+    //  if (id != tarea.Id)
+    //  {
+    //    return BadRequest(new { mensaje = "Los ID's no coinciden" });
+    //  }
+
+    //  _context.Entry(tarea).State = EntityState.Modified;
+
+    //  try
+    //  {
+    //    await _context.SaveChangesAsync();
+    //  }
+    //  catch (DbUpdateConcurrencyException)
+    //  {
+    //    if (!tareaExists(id))
+    //    {
+    //      return NotFound();
+    //    }
+    //    else
+    //    {
+    //      throw;
+    //    }
+    //  }
+    //  return NoContent();
+    //}
+
+    ////DELETE: API TAREAS
+
+    //[HttpDelete("{id}")]
+    //public async Task<IActionResult> deleteTarea(Guid id)
+    //{
+    //  var tarea = await _context.Tasks.FindAsync(id);
+
+    //  if(tarea == null) {  return NotFound(); }
+    //  _context.Tasks.Remove(tarea);
+    //  await _context.SaveChangesAsync();
+    //  return Ok(new { mensaje = "Eliminado correctamente" });
+    //}
+
+    //private bool tareaExists(Guid id)
+    //{
+    //  return _context.Tasks.Any(t => t.Id == id);
+    //}
   }
-}
+  }

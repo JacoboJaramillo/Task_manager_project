@@ -15,6 +15,13 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
     modelBuilder.Entity<TaskItem>()
         .HasOne(t => t.User).WithMany(u => u.Tasks)
         .HasForeignKey(t => t.UserId).OnDelete(DeleteBehavior.Cascade);
+    modelBuilder.Entity<Category>(entity =>
+    {
+      entity.HasOne(c => c.User).WithMany(u => u.Categories)
+      .HasForeignKey(t => t.userId).OnDelete(DeleteBehavior.Cascade);
+      entity.HasMany(t => t.Task).WithOne(c => c.Category)
+      .HasForeignKey(t => t.CategoryId).OnDelete(DeleteBehavior.SetNull);
+    });
   }
 }
 

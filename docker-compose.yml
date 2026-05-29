@@ -16,7 +16,6 @@ services:
      interval: 5s
      timeout: 5s
      retries: 5
- 
   pgadmin:
     image: dpage/pgadmin4
     container_name: taskmanager-pgadmin
@@ -28,10 +27,5 @@ services:
     depends_on:
        postgres:
         condition: service_healthy
-
- 
 volumes:
   pgdata:
-
-
-      
