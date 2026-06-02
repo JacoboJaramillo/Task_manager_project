@@ -1,0 +1,17 @@
+<form (ngSubmit)="registrarUsuario()" #registroForm="ngForm">
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <label class="form-label fw-bold">Nombre</label>
+            <input type="text" class="form-control" name="nombre" [(ngModel)]="credenciales.name" required placeholder="Jacobo">
+        </div>
+        <div class=" columns-md-4 mb-3">
+            <label class="form-label fw-bold">Correo</label>
+            <input type="text" class="form-control" name="correo" [(ngModel)]="credenciales.email" required placeholder="Jacobo@gmail.com">
+        </div>
+        <div class="col-md-4 mb-3">
+            <label class="form-label fw-bold">Contraseña</label>
+            <input type="password" class="form-control" name="contrasena" [(ngModel)]="credenciales.password" required placeholder="123456789">
+        </div>
+        <button type="submit" class="btn" [disabled]="!registroForm.form.valid">Login</button>
+    </div>
+</form>
