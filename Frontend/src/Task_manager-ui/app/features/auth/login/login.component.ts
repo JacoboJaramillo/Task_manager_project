@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { AuthService } from '../../../../core/services/Auth.service';
+import { AuthService } from '../../../core/services/Auth.service';
 import { Router } from '@angular/router';
-import { LoginDTO } from '../../../../core/models/loginDto.model';
+import { LoginDTO } from '../../../core/models/loginDto.model';
 import { NgClass } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { AuthService } from '../../../../core/services/Auth.service';
+import { AuthService } from '../../../core/services/Auth.service';
 import { Router } from '@angular/router';
-import { User } from '../../../../core/models/user.model';
+import { User } from '../../../core/models/user.model';
 import { FormsModule } from '@angular/forms';
 
 @Component({
