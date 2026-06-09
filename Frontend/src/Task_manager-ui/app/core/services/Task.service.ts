@@ -7,15 +7,29 @@ import { Task } from '../models/task.model';
 })
 export class TaskService {
   private http = inject(HttpClient)
-  private url = `${enviroment.apiURL}/tasks`
+  private url = `${enviroment.apiURL}/Task`
   //METODO GET
-  getAll() { return this.http.get<Task[]>(this.url);}
+  getAll()
+  { 
+    return this.http.get<Task[]>(this.url);
+  }
   //METODO POST
-  create(task: Partial<Task>) {return this.http.post<Task>(this.url, task);}
+  createTask(task: Partial<Task>) 
+  {
+    return this.http.post<Task>(this.url, task);
+  }
+
   //METODO UPDATE
-  update(id: string, task: Partial<Task>) {return this.http.put<Task>(`${this.url}/${id}`, task);}
+  updateTask(id: string, task: Partial<Task>) 
+  {
+    return this.http.put<Task>(`${this.url}/${id}`, task);
+  }
+
   //METODO DELETE
-  delete(id: string) {return this.http.delete(`${this.url}/${id}`);}
+  deleteTask(id: string) 
+  {
+    return this.http.delete(`${this.url}/${id}`);
+  }
 
 
 

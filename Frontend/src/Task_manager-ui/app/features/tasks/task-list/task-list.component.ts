@@ -1,10 +1,38 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Task } from '../../../core/models/task.model';
+import { TaskService } from '../../../core/services/Task.service';
+import { AsyncPipe, NgClass } from '@angular/common';
+
 
 @Component({
   selector: 'app-task-list.component',
-  imports: [],
+  imports: [AsyncPipe, NgClass],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TaskListComponent {}
+export class TaskListComponent  implements OnInit{
+
+  taskService = inject(TaskService)
+  tareas$!: Observable<Task[]>
+
+  ngOnInit(){
+   this.tareas$ = this.taskService.getAll()
+  }
+
+  editarTarea(tarea: Task){
+
+  }
+
+  eliminarTarea(id: string, tarea: Task){
+    if(!id) return;
+
+    if(confirm(`Estas seguro de eliminar la tarea ${tarea.title} definitivamente?`)){
+      this.taskService.deleteTask(id).subscribe({
+        next: (resp) =>{
+         this.tareas$ = this.taskService.getAll()
+        }
+      })   
+    }
+  }
+}
