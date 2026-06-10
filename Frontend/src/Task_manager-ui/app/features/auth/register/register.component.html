@@ -1,0 +1,45 @@
+<section class="min-h-screen w-full flex items-center justify-center">
+<div class=" bg-amber-50 sm:mx-auto sm:w-full sm:max-w-md rounded-2xl">
+    <div class=" py-8 px-6 shadow rounded-lg sm:max-w-md">
+        <div class="text-center" style="font-size: 35px; font-weight: 1000;">Registrate</div>
+    <form (ngSubmit)="registrarUsuario()" #registroForm="ngForm">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label class="form-label fw-bold block text-sm font-medium">Nombre</label>
+                <input type="text" class="form-control w-full border border-gray-300 px-3 py-2 rounded-lg
+                    shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1"
+                    name="nombre" [(ngModel)]="credenciales.name" #nombre="ngModel" required placeholder="Jacobo">
+                    @if(nombre.invalid && nombre.touched){
+                        <span style="color: red;">Nombre es obligatorio</span>
+                    }
+            </div>
+            <div class=" columns-md-4 mb-3">
+                <label class="form-label fw-bold block text-sm font-medium">Correo</label>
+                <input type="email" class="form-control w-full border border-gray-300 px-3 py-2 rounded-lg
+                  shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1"
+                   name="correo" [(ngModel)]="credenciales.email" #correo="ngModel" required placeholder="Jacobo@gmail.com">
+                   @if(correo.invalid && correo.touched){
+                    <span style="color:  red;">El correo es obligatorio</span>
+                   }
+            </div>
+            <div class="col-md-4 mb-3">
+                <label class="form-label fw-bold block text-sm font-medium">Contraseña</label>
+                <input type="password" minlength="8" class="form-control w-full border border-gray-300 px-3 py-2 rounded-lg
+                  shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1"
+                   name="contrasena" [(ngModel)]="credenciales.password" #contrasena="ngModel" required placeholder="123456789">
+                   @if(contrasena.invalid && contrasena.touched){
+                    <span style="color: red;">La contraseña debe ser minimo de 8 caracteres</span>
+                   }
+            </div>
+        @if(errorMsg){
+            <span style="color: red;">{{errorMsg}}</span>
+        }
+        <button type="submit" class="btn  w-full py-0.5 bg-indigo-500 rounded-2xl " [disabled]="!registroForm.form.valid">Login</button>
+        </div>
+    </form>
+    <div class="text-center mt-4 text-sm text-gray-600">¿Ya tienes cuenta?
+        <a routerLink="/login" class=" text-indigo-600 hover:text-indigo-300 font-medium underline navigation-link">Inicia Sesion!</a>
+    </div>
+    </div>
+</div>
+</section>

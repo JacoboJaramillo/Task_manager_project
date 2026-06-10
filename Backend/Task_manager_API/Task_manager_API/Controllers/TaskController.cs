@@ -38,8 +38,13 @@ namespace Task_manager_API.Controllers
     public async Task<ActionResult<TaskDTO>> PostTasks(CreateTaskDTO Task)
     {
       var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
       if (Guid.TryParse(userId, out Guid result))
       {
+        if (Task.DueDate.HasValue)
+        {
+          Task.DueDate = DateTime.SpecifyKind(Task.DueDate.Value, DateTimeKind.Utc);
+        }
         var tareaUsuario = new TaskItem
         {
           UserId = result,
@@ -96,6 +101,8 @@ namespace Task_manager_API.Controllers
       }
       return BadRequest();
     }
+
+
     ////GET
 
     //[HttpGet("{id}")]

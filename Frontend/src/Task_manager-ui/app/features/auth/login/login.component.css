@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  
+  /* El gradiente animado */
+  background: linear-gradient(-45deg, #620909, #ff6363, #922bff, #014d64);
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
+}
+
+
+
+
+/* Animación para mover el fondo */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
