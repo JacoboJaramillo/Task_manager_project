@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { AuthService } from '../../../core/services/Auth.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { User } from '../../../core/models/user.model';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-register.component',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './register.component.html',
   styleUrl: './register.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -15,6 +15,7 @@ export class RegisterComponent {
 
   servicioAuth = inject(AuthService)
   router = inject(Router)
+  errorMsg: string = ''
 
   credenciales: User ={
     name: '',
@@ -29,6 +30,7 @@ export class RegisterComponent {
         this.router.navigate(['login'])
       },
       error: (err)=>{
+        this.errorMsg = 'El correo ya esta asignado a otra cuenta'
         console.error("registro invalido")
       }
     })

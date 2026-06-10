@@ -25,6 +25,13 @@ namespace Task_manager_API.Controllers
     [HttpPost(Name = "Post_users")]
     public async Task<ActionResult<UserDTO>> postUser([FromBody] registerUserDTO dto)
     {
+      //verificar que no haya un usuario con el mismo correo
+      var correo = await _context.Users.FirstOrDefaultAsync(c => c.Email == dto.Email);
+      if(correo != null)
+      {
+        return Conflict("Este correo ya esta asociado a otra cuenta");
+      }
+
       //Encriptar contraseña pa seguridad
       string contraHasheada = BCrypt.Net.BCrypt.EnhancedHashPassword(dto.password);
       //Mapear Manualmente DTO de entrada y se manda a la DB
