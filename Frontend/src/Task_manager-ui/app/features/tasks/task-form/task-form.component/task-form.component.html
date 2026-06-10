@@ -1,1 +1,29 @@
 <p>task-form.component works!</p>,
+
+<form (ngSubmit)="crearTarea()" #tareaForm="ngForm">
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <label class="form-label fw-bol">Titulo:</label>
+            <input type="text" class="form-control" name="title" [(ngModel)]="nuevaTarea.title" required placeholder="Ej: Matematicas">
+        </div>
+        <div>
+            <label class="form-label fw-bol">Prioridad:</label>
+            <select id="opciones" [(ngModel)]="nuevaTarea.priority" name="priority">
+                <option value="" disabled selected>-- elige una opcion --</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label class="form-label fw-bol">Fecha limite</label>
+            <input type="date" class="form-control" name="dueDate" [(ngModel)]="nuevaTarea.dueDate" placeholder="">
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+            <label class="form-label fw-bol">Descripción:</label>
+            <input type="text" class="form-control" name="description" [(ngModel)]="nuevaTarea.description" placeholder="descripcion...">
+    </div>
+    <button type="submit" class="btn btn-success">Crear Tarea</button>
+    
+</form>

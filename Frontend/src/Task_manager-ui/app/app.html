@@ -8,5 +8,8 @@
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+@if(authService.isLoggedIn()){
+<app-navbar></app-navbar>
 
+}
 <router-outlet />
