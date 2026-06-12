@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { Task } from '../../../core/models/task.model';
 import { TaskService } from '../../../core/services/Task.service';
 import { AsyncPipe, NgClass } from '@angular/common';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -14,6 +15,7 @@ import { AsyncPipe, NgClass } from '@angular/common';
 export class TaskListComponent  implements OnInit{
 
   taskService = inject(TaskService)
+  route = inject(Router)
   tareas$!: Observable<Task[]>
 
   ngOnInit(){
@@ -21,8 +23,14 @@ export class TaskListComponent  implements OnInit{
   }
 
   editarTarea(tarea: Task){
+    if(!tarea.id) return
+
+    const tareaClon = {...tarea};
+    console.log(tarea)
+    this.route.navigate(['task-form', tareaClon.id])
 
   }
+
 
   eliminarTarea(id: string, tarea: Task){
     if(!id) return;

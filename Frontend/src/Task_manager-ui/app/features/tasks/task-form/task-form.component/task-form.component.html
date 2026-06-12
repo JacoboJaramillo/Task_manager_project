@@ -1,1 +1,45 @@
 <p>task-form.component works!</p>,
+
+<form (ngSubmit)="crearTarea()" #tareaForm="ngForm" class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700 max-w-lg mx-auto">
+  
+  <h2 class="text-white text-2xl font-bold mb-6 text-center">{{nuevaTarea.id ? 'Editar tarea': 'Crear tarea'}}</h2>
+
+  <div class="space-y-4">
+    
+    <div>
+      <label class="block text-gray-400 text-sm font-semibold mb-2">Título</label>
+      <input type="text" name="title" [(ngModel)]="nuevaTarea.title" required 
+        class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all" 
+        placeholder="Ej: Matemáticas">
+    </div>
+
+    <div>
+      <label class="block text-gray-400 text-sm font-semibold mb-2">Prioridad</label>
+      <select name="priority" [(ngModel)]="nuevaTarea.priority" 
+        class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all">
+        <option value="" disabled selected>-- Elige una opción --</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+    </div>
+
+    <div>
+      <label class="block text-gray-400 text-sm font-semibold mb-2">Fecha límite</label>
+      <input type="date" name="dueDate" [(ngModel)]="nuevaTarea.dueDate" 
+        class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all">
+    </div>
+
+    <div>
+      <label class="block text-gray-400 text-sm font-semibold mb-2">Descripción</label>
+      <input type="text" name="description" [(ngModel)]="nuevaTarea.description" 
+        class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all" 
+        placeholder="Escribe la descripción...">
+    </div>
+
+    <button type="submit" 
+      class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition-all transform hover:scale-[1.02]">
+      {{nuevaTarea.id ? 'Editar': 'Crear'}}
+    </button>
+  </div>
+</form>

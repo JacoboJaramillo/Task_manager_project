@@ -1,13 +1,32 @@
-<form (ngSubmit)="loginUsuario()" #loginForm="ngForm">
-    <div class="row">
-        <div class=" columns-md-4 mb-3">
-            <label class="form-label fw-bold">Correo</label>
-            <input type="text" class="form-control" name="correo" [(ngModel)]="credenciales.email" required placeholder="Jacobo@gmail.com">
-        </div>
+<section class="min-h-screen w-full flex items-center justify-center">
+<div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="bg-white py-8 px-6 shadow rounded-lg sm:max-w-md">
+        <div class="text-center" style="font-size: 35px; font-weight: 1000;">Inicia Sesión</div>
+        <form (ngSubmit)="loginUsuario()" #loginForm="ngForm">
+            <div>
+                <label class="form-label fw-bold block text-sm font-medium">Correo</label>
+                <input type="email" class="form-control w-full border border-gray-300 px-3 py-2 rounded-lg
+                  shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1"
+                   name="correo" [(ngModel)]="credenciales.email" #correo="ngModel" required placeholder="Jacobo@gmail.com">
+                   @if(correo.invalid && correo.touched){
+                    <span style="color:  red;">Correo obligatorio</span>
+                   }
+            </div>
+        
         <div class="col-md-4 mb-3">
             <label class="form-label fw-bold">Contraseña</label>
-            <input type="password" class="form-control" name="contrasena" [(ngModel)]="credenciales.password" required placeholder="123456789">
+            <input type="password" class="form-control w-full border border-gray-300 px-3 py-2 rounded-lg
+              shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1"
+               name="contrasena" [(ngModel)]="credenciales.password" #contrasena="ngModel" required placeholder="123456789">
+               @if(contrasena.invalid && contrasena.touched){
+                <span style="color: red;">Contraseña obligatoria</span>
+               }
         </div>
-        <button type="submit" class="btn" [disabled]="!loginForm.form.valid">Login</button>
+        <button type="submit" class="mt-4 w-full py-1.5 focus:border-indigo-950 btn bg-blue-500 rounded-lg " [disabled]="!loginForm.form.valid">Login</button>
+        </form>
+        <div class="text-center mt-4 text-sm text-gray-600">¿No tienes cuenta?
+            <a routerLink="/register" class=" text-indigo-600 hover:text-indigo-300 font-medium underline navigation-link">Registrate!</a>
+        </div>
     </div>
-</form>
+</div>
+</section>
