@@ -10,7 +10,8 @@ export const routes: Routes = [
     {path: 'login', component: LoginComponent },
     {path: 'register', component: RegisterComponent},
     {path: 'tasks', component: TaskListComponent, canActivate: [AuthGuard]},
-    {path: 'task-form', component: TaskFormComponent, canActivate: [AuthGuard]}
+    {path: 'task-form', component: TaskFormComponent, canActivate: [AuthGuard]},
+    {path: 'task-form/:id', component: TaskFormComponent, canActivate: [AuthGuard]}
     
     
 ]
