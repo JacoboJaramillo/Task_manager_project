@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager_api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|solutionrelative:task_manager_api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|solutionrelative:task_manager_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager_api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|solutionrelative:task_manager_api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6E02357-F969-3671-6A97-AD4417CFEB1C}|Task_manager_API\\Task_manager_API.csproj|c:\\users\\windows 11\\onedrive\\documentos\\proyecto task-manager\\task_manager\\backend\\task_manager_api\\task_manager_api\\dtos\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,30 +78,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TaskController.cs",
               "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "Task_manager_API\\Controllers\\TaskController.cs",
-              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Controllers\\TaskController.cs*",
-              "RelativeToolTip": "Task_manager_API\\Controllers\\TaskController.cs*",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAlwG8AAABUAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "Task_manager_API\\Controllers\\TaskController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T17:14:07.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T17:14:07.036Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Task_manager_API\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\WINDOWS 11\\OneDrive\\Documentos\\Proyecto Task-manager\\Task_manager\\Backend\\Task_manager_API\\Task_manager_API\\Controllers\\UserController.cs",
               "RelativeToolTip": "Task_manager_API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAApwDUAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDoAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-15T15:44:39.246Z",
               "EditorCaption": ""
