@@ -1,1 +1,34 @@
-<p>dashboard.component works!</p>,
+
+<div class=" mt-2 grid grid-cols-4 gap-4">
+<div class="bg-blue-800  rounded-xl p-6 text-white shadow-lg">
+    <h3 class="text-sm font-semibold text-black">Total tareas</h3>
+    <p class="text-4xl font-bold mt-2">{{totaltareas}}</p>
+</div>
+<div class="bg-amber-400  rounded-xl p-6 text-white shadow-lg">
+    <h3 class="text-sm font-semibold text-black">Tareas Pendientes</h3>
+    <p class="text-4xl font-bold mt-2">{{tareasPendientes}}</p>
+</div>
+<div class="bg-emerald-600  rounded-xl p-6 text-white shadow-lg">
+    <h3 class="text-sm font-semibold text-black">Tareas Completadas</h3>
+    <p class="text-4xl font-bold mt-2">{{tareasCompletadas}}</p>
+</div>
+<div class="bg-red-800  rounded-xl p-6 text-white shadow-lg">
+    <h3 class="text-sm font-semibold text-black">Tareas vencidas</h3>
+    <p class="text-4xl font-bold mt-2">{{tareasVencidas}}</p>
+</div>
+</div>
+<h1 class="text-center font-extrabold px-10">Prioridad de tareas</h1>
+<div class="grid grid-cols-3 gap-1 px-1">
+    <div class="bg-emerald-300  rounded-xl p-6 text-white shadow-lg">
+    <h3 class="text-sm font-semibold text-black">Prioridad Baja</h3>
+    <p class="text-4xl font-bold mt-2">{{tareasPrioridad.Low}}</p>
+    </div>
+    <div class="bg-amber-200  rounded-xl p-6 text-white shadow-lg">
+    <h3 class="text-sm font-semibold text-black">Prioridad Media</h3>
+    <p class="text-4xl font-bold mt-2">{{tareasPrioridad.Medium}}</p>
+    </div>
+        <div class="bg-red-900  rounded-xl p-6 text-white shadow-lg">
+    <h3 class="text-sm font-semibold text-black">Prioridad Alta</h3>
+    <p class="text-4xl font-bold mt-2">{{tareasPrioridad.High}}</p>
+    </div>
+</div>
