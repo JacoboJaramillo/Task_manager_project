@@ -13,6 +13,13 @@ export class TaskService {
   { 
     return this.http.get<Task[]>(this.url);
   }
+
+  //METODO GET{ID}
+
+  getId(id: string){
+    return this.http.get<Task>(`${this.url}/${id}`)
+  }
+
   //METODO POST
   createTask(task: Partial<Task>) 
   {

@@ -33,6 +33,40 @@ namespace Task_manager_API.Controllers
         return NotFound(new { mensaje = "Usuario no encontrado" });
       }
     }
+
+    //GET{ID} API TASKS
+
+    [HttpGet("{id}")]
+
+    public async Task<ActionResult<TaskDTO>> GetTask(Guid id)
+    {
+
+      
+      var userid = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      if(Guid.TryParse(userid, out Guid result))
+      {
+        var tareas = await _context.Tasks.Where(i => i.UserId == result && i.Id == id).FirstOrDefaultAsync();
+
+        if (tareas == null)
+        {
+          return NotFound();
+        }
+
+        return Ok(new TaskDTO
+        {
+          Id = id,
+          Title = tareas.Title,
+          Description = tareas.Description,
+          IsCompleted = tareas.IsCompleted,
+          Priority = tareas.Priority,
+          DueDate = tareas.DueDate,
+        });
+
+      }
+      return NotFound();
+    }
+
+
     //POST API TAREA
     [HttpPost]
     public async Task<ActionResult<TaskDTO>> PostTasks(CreateTaskDTO Task)
@@ -72,6 +106,10 @@ namespace Task_manager_API.Controllers
         if (buscarId.UserId != result)
         {
           return NotFound();
+        }
+        if (Task.DueDate.HasValue)
+        {
+          Task.DueDate = DateTime.SpecifyKind(Task.DueDate.Value, DateTimeKind.Utc);
         }
         buscarId.Title = Task.Title;
         buscarId.Description = Task.Description;

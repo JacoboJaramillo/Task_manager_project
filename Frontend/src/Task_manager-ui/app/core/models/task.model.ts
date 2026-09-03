@@ -4,6 +4,6 @@ export interface Task {
     description: string,
     isCompleted: boolean,
     priority: string,
-    dueDate: Date | null,
+    dueDate?: string | null,
     userId: string
 }

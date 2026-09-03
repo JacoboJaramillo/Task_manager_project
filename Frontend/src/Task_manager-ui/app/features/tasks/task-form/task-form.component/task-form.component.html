@@ -2,7 +2,7 @@
 
 <form (ngSubmit)="crearTarea()" #tareaForm="ngForm" class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700 max-w-lg mx-auto">
   
-  <h2 class="text-white text-2xl font-bold mb-6 text-center">Crear Nueva Tarea</h2>
+  <h2 class="text-white text-2xl font-bold mb-6 text-center">{{nuevaTarea.id ? 'Editar tarea': 'Crear tarea'}}</h2>
 
   <div class="space-y-4">
     
@@ -39,7 +39,7 @@
 
     <button type="submit" 
       class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition-all transform hover:scale-[1.02]">
-      Crear Tarea
+      {{nuevaTarea.id ? 'Editar': 'Crear'}}
     </button>
   </div>
 </form>
