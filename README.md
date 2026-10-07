@@ -167,7 +167,7 @@ export const environment = {
 | 4 | CategoriesController | ✅ Completado |
 | 5 | Frontend AuthService + Login + Register | ✅ Completado |
 | 6 | Frontend Tasks Module (task-list, task-form, navbar) | ✅ Completado |
-| 7 | Frontend Dashboard | 🔄 Pendiente |
+| 7 | Frontend Dashboard | ✅ Completado |
 | 8 | Tests xUnit + CI/CD | 🔄 Pendiente |
 
 ## Notas de desarrollo
